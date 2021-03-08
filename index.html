@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horário</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    body {
+        background-color: rgb(28, 56, 112);
+        color: rgba(0, 0, 0, 0.5);
+        text-shadow: 5px 5px #fff;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 30px;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .horario {
+        width: 50%;
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        top: 150px;
+        text-align: center;
+        padding-bottom: 100px;
+        padding-top: 100px;
+        border-radius: 10px;
+    }
+    @media (max-width: 780px) {
+        body {
+            font-size: 15px;
+        }
+        .horario {
+            top: 70px;
+        }
+    }
+</style>
+<body class="background">
+    <div class="horario">
+        <h1 id="horas"></h1>
+        <h2 id="parte_dia"></h2>
+    </div>
+    <script src="js/timeoftheday.js"></script>
+</body>
+</html>
